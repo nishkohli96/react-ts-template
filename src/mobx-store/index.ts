@@ -1,15 +1,3 @@
-import { configure } from 'mobx';
-import Doubler from './doubler.store';
+import RootStore from './store';
 
-/* Import all stores here */
-class RootStore {
-    doubler = new Doubler();
-
-    constructor() {
-        configure({
-            enforceActions: 'never',
-        });
-    }
-}
-
-export default new RootStore();
+export { RootStore };

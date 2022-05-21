@@ -2,13 +2,14 @@ import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import Button from '@mui/material/Button';
-import rootStore from 'mobx-store';
+import { RootStore } from 'mobx-store';
 import { fetchBankInfo, useAppSelector, useAppDispatch } from 'redux-store';
 
 const Page1: FC = () => {
     const navigate = useNavigate();
     const bankInfo = useAppSelector((state) => state.bank.bankInfo);
     const dispatch = useAppDispatch();
+    const rootStore = new RootStore();
 
     return (
         <div className="root">
