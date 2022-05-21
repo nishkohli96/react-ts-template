@@ -2,10 +2,8 @@ import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import Button from '@mui/material/Button';
-
-import rootStore from '_Mobx/index';
-import { useAppSelector, useAppDispatch } from '_Redux/hooks';
-import { fetchBankInfo } from '_Redux/bankInfo.slice';
+import rootStore from 'mobx-store';
+import { fetchBankInfo, useAppSelector, useAppDispatch } from 'redux-store';
 
 const Page1: FC = () => {
     const navigate = useNavigate();

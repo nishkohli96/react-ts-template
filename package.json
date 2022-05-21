@@ -20,7 +20,6 @@
         "mobx": "^6.5.0",
         "mobx-react-lite": "^3.4.0",
         "react": "^18.1.0",
-        "react-app-rewired": "^2.2.1",
         "react-dom": "^18.1.0",
         "react-redux": "^8.0.1",
         "react-router-dom": "^6.3.0",
@@ -30,9 +29,9 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-app-rewired start",
-        "build": "react-app-rewired build",
-        "test": "react-app-rewired test",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
         "eject": "react-scripts eject",
         "prettier": "prettier --write *"
     },
@@ -61,7 +60,6 @@
     },
     "devDependencies": {
         "@types/react-router-dom": "^5.3.3",
-        "prettier": "^2.6.2",
-        "react-app-rewire-alias": "^1.1.7"
+        "prettier": "^2.6.2"
     }
 }
