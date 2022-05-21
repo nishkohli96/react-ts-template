@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "_Icons/*": ["src/assets/icons/*"],
+            "_Images/*": ["src/assets/images/*"],
+            "_Mobx/*": ["src/mobx/*"],
+            "_Pages/*": ["src/pages/*"],
+            "_Redux/*": ["src/redux/*"],
+            "_Routes/*": ["src/routes/*"],
+            "_Shared/*": ["src/shared/*"],
+            "_Styles/*": ["src/assets/styles/*"]
+        }
+    }
+}

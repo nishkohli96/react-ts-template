@@ -1,0 +1,31 @@
+{
+    "extends": "./tsconfig.paths.json",
+    "compilerOptions": {
+        "target": "es2021",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "declaration": true /* for .d.td file */,
+        "removeComments": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "sourceMap": false /* dont generate .map file in build */,
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "noImplicitAny": true /* Raise err with an any type */,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true /* strict checking of function types */,
+        "noImplicitThis": true /* useStrict for each file */,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx"
+    },
+    "include": ["src"]
+}
