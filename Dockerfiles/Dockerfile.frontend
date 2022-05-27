@@ -1,0 +1,13 @@
+# Base Image
+
+FROM node:17-alpine3.14
+
+WORKDIR /app
+
+# Run yarn only if package.json changes
+COPY ./package.json ./
+RUN yarn install
+
+COPY . .
+
+CMD ["yarn", "start" ]

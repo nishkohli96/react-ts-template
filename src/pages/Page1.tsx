@@ -16,7 +16,7 @@ const Page1: FC = () => {
 	return (
 		<div className="root">
 			<div>
-				ENvironment var -{' '}
+				Environment variable -{' '}
 				<span className="text">{REACT_APP_TESTVAR}</span>
 			</div>
 			<div style={{ margin: '10px 0px' }}>
