@@ -1,0 +1,10 @@
+# Excluding node_modules as `tsc` cmd not found err while running build
+#node_modules
+
+.prettierrc
+.prettierignore
+.github
+.husky
+README.md
+
+yarn.lock
