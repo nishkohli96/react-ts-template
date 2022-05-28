@@ -20,7 +20,7 @@ const Page1: FC = () => {
 				<span className="text">{REACT_APP_TESTVAR}</span>
 			</div>
 			<div style={{ margin: '10px 0px' }}>
-				hi from Page1. Edit the code
+				Hi from Page1. Feel free to add your own code 😃.
 			</div>
 			<Button variant="outlined" onClick={() => navigate('/page-2')}>
 				Go to Page2
