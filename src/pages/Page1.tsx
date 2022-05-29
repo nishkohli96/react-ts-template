@@ -1,12 +1,10 @@
 import { FC } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import Button from '@mui/material/Button';
 import { RootStore } from 'mobx-store';
 import { fetchBankInfo, useAppSelector, useAppDispatch } from 'redux-store';
 
 const Page1: FC = () => {
-	const navigate = useNavigate();
 	const bankInfo = useAppSelector((state) => state.bank.bankInfo);
 	const dispatch = useAppDispatch();
 	const rootStore = new RootStore();
@@ -22,9 +20,6 @@ const Page1: FC = () => {
 			<div style={{ margin: '10px 0px' }}>
 				Hi from Page1. Feel free to add your own code 😃.
 			</div>
-			<Button variant="outlined" onClick={() => navigate('/page-2')}>
-				Go to Page2
-			</Button>
 			<div>Doubler Value: {rootStore.doubler.counterValue}</div>
 			<Button onClick={() => rootStore.doubler.increment()}>
 				Increment

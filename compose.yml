@@ -3,8 +3,18 @@
 # version field is now DEPRECATED & not required
 
 services:
-    frontend-app:
-        image: nish1896/react-ts-template
+    dev:
+        image: nish1896/reat-ts-dev
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - '4000:3000'
+        volumes:
+            - .:/app
+            - /app/node_modules
+    prod:
+        image: nish1896/react-ts-prod
         build: .
         ports:
             - '3000:80'

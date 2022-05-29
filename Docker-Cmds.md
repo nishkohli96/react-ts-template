@@ -2,7 +2,7 @@
 
 1. Build `frontend` image
 
-`docker build -f Dockerfiles/Dockerfile.frontend -t react-ts-temp .`
+`docker build -f Dockerfile.dev -t react-ts-temp .`
 
 2. Run Image
 
@@ -14,7 +14,11 @@
 
 If using the `-v /app/node_modules` flag, you don't need to install `node_modules` folder. It means that not to take reference for `node_modules` in the actual directory.
 
-4. Run Production build on [nginx](https://hub.docker.com/_/nginx)
+4. Run `dev` using docker-compose
+
+`docker-compose up --build dev`
+
+5. Run Production build on [nginx](https://hub.docker.com/_/nginx)
 
 `docker build -t nish1896/react-ts-temp .`
 
@@ -22,7 +26,7 @@ Now run this generated image
 
 `docker run -p 8080:80 nish1896/react-ts-temp`
 
-5. Run Production build using [docker-compose](https://docs.docker.com/compose/compose-file/)
+6. Run Production build using [docker-compose](https://docs.docker.com/compose/compose-file/)
 
 `docker-compose up --build`
 
