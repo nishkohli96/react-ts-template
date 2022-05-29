@@ -16,8 +16,14 @@ If using the `-v /app/node_modules` flag, you don't need to install `node_module
 
 4. Run Production build on [nginx](https://hub.docker.com/_/nginx)
 
-`docker build -f Dockerfiles/Dockerfile.feBuild -t nish1896/react-ts-temp .`
+`docker build -t nish1896/react-ts-temp .`
 
 Now run this generated image
 
 `docker run -p 8080:80 nish1896/react-ts-temp`
+
+5. Run Production build using [docker-compose](https://docs.docker.com/compose/compose-file/)
+
+`docker-compose up --build`
+
+Remove the `--build` flag if you don't need to rebuild the image before running it. While running `docker-compose` the `Dockerfile` must be in the root directory that contains the `src` for your code, else it would throw an error.

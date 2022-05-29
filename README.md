@@ -7,7 +7,7 @@
 -   Enabled Typescript support
 -   Pre-configured routes
 -   Sample [Redux](https://redux.js.org/) & [Mobx](https://mobx.js.org/README.html) store configured
--   Dockerfiles to run the app in dev and production mode
+-   Dockerfiles to run the app in dev and production mode. Check `Commands.md` file in the **Dockerfiles** folder.
 -   Github Actions for checking build status
 
 `This Repository contains code for React v18.`

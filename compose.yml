@@ -1,0 +1,10 @@
+# docker-compose.yml or compose.yml both names are OK
+# However more pref is now given to compose.yml file
+# version field is now DEPRECATED & not required
+
+services:
+    frontend-app:
+        image: nish1896/react-ts-template
+        build: .
+        ports:
+            - '3000:80'
